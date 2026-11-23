@@ -1,0 +1,29 @@
+HƯỚNG DẪN ĐƯA WEB APP LÊN MẠNG & CÀI LÊN MÀN HÌNH CHÍNH ĐIỆN THOẠI (PWA)
+=========================================================================
+
+Thư mục này đã đóng gói sẵn đầy đủ thành phần của một ứng dụng PWA hoàn chỉnh:
+- index.html            : Toàn bộ ứng dụng đồng hồ tập 7 ngày + minh họa động + âm bíp
+- manifest.webmanifest  : Cấu hình biểu tượng và chế độ toàn màn hình trên điện thoại
+- sw.js                 : Service Worker giúp mở và tập offline không cần mạng
+- icon-192.png / 512.png: Biểu tượng ứng dụng cho iOS và Android
+
+CÁCH 1 — NHANH NHẤT (30 GIÂY, KHÔNG CẦN TÀI KHOẢN LẬP TRÌNH): NETLIFY DROP
+1. Giải nén tệp pwa-tap-tai-nha.zip ra một thư mục trên máy tính.
+2. Truy cập trang https://app.netlify.com/drop trên trình duyệt.
+3. Kéo thả toàn bộ thư mục pwa-tap-tai-nha vừa giải nén vào khung thả tệp.
+4. Netlify sẽ cấp ngay một đường link HTTPS miễn phí (dạng https://ten-ngau-nhien.netlify.app).
+
+CÁCH 2 — DÙNG GITHUB PAGES (MIỄN PHÍ LÂU DÀI)
+1. Tạo một repository mới trên GitHub (chọn Public).
+2. Tải toàn bộ 5 tệp (index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png) lên nhánh main.
+3. Vào Settings → Pages → chọn Branch: main (/root) → Save để nhận link HTTPS.
+
+CÀI LÊN MÀN HÌNH CHÍNH ĐIỆN THOẠI NHƯ APP THẬT
+- Trên iPhone (mở link bằng Safari):
+  Bấm nút Chia sẻ (mũi tên đi lên ở giữa dưới) → chọn "Thêm vào MH chính" → bấm "Thêm".
+- Trên Android (mở link bằng Chrome):
+  Bấm nút "Cài lên điện thoại" ngay góc trên web app (hoặc bấm dấu 3 chấm ⋮ → "Cài đặt ứng dụng").
+
+LƯU Ý VỀ 3 CHẾ ĐỘ XEM MINH HỌA TRONG APP
+- Video thực tế (mặc định): Nhúng sẵn video YouTube huấn luyện viên thị phạm chi tiết từng động tác (cần kết nối mạng; có nút "Mở trên YouTube ↗" để xem toàn màn hình).
+- Hình động & Ảnh giải phẫu: Tích hợp sẵn bên trong tệp, chạy mượt 100% kể cả khi tắt mạng (offline).
